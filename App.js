@@ -1,14 +1,12 @@
-import React from "react";
-import "./App.css";
-import Electronics from "./components/classComponents/classComponet";
+import "./styles.css";
+import TodoList from "../TodoList";
+import TodoFoot from "../TodoFoot";
 
-function App() {
+export default function App() {
   return (
-    // <div className="App">
-    //   <Electronics />
-    // </div>
-    React.createElement("div", { className: "App" }, <Electronics />)
+    <div className="App">
+      <TodoList />
+      <TodoFoot />
+    </div>
   );
 }
-
-export default App;
